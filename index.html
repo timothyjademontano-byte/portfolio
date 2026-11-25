@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Timothy Jade B. Montaño | Portfolio</title>
+<meta name="description" content="Portfolio of Timothy Jade B. Montaño, fourth-year BSIT student at STI College Legazpi and aspiring Software Engineer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  document.documentElement.classList.add('js');
+  try { var t = localStorage.getItem('tm-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
+</head>
+<body>
+
+<div class="glow" aria-hidden="true"></div>
+
+<div class="progress-bar" aria-hidden="true"></div>
+<header class="topbar">
+  <nav class="bar" aria-label="Main">
+    <a class="logo" href="#home" aria-label="Back to top">TM</a>
+    <ul class="links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="bar-actions">
+      <button class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch light / dark">
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </button>
+      <a class="pill solid small" href="#documents">Resume</a>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <div class="hero-text reveal">
+    <p class="kicker">Aspiring Software Engineer</p>
+    <h1>Timothy Jade B. Montaño</h1>
+    <p class="tagline"><span>Plan the data first.</span><span class="accent">Then build what people can use.</span></p>
+    <p class="intro">Hello, I’m Timothy, a fourth-year Bachelor of Science in Information Technology student at STI College Legazpi. I enjoy turning ideas into working software, from planning a database to designing screens that are easy to use. I work with Java, C#, and MySQL, along with HTML, CSS, and basic JavaScript, and I completed Oracle Academy’s Java Fundamentals course in 2024. My capstone project, GENECOM Library, is an eBook management system that helps a school organize, catalog, and read its digital collection. Building it has taught me to plan before I code and to organize data carefully. I am preparing for an entry-level Software Engineer role where I can write clean, well-tested code, learn from code reviews, and keep growing.</p>
+    <p class="actions">
+      <a class="pill solid" href="#projects">View projects</a>
+      <a class="pill" href="#contact">Get in touch</a>
+    </p>
+  </div>
+  <div class="portrait reveal">
+    <img src="photo.jpg" alt="Portrait of Timothy Jade B. Montaño" width="260" height="260">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="sec-head reveal"><h2>About me</h2></div>
+  <div class="about-grid">
+    <div class="prose reveal">
+      <p>I finished high school at Donsol National Comprehensive High School in 2022 and began my BS Information Technology degree at STI College Legazpi in August 2023. My coursework covers programming fundamentals, data structures and algorithms, object-oriented programming, database management, and human-computer interaction.</p>
+      <p>I am reliable, detail-oriented, and good at managing my time. I solve problems step by step, I work well with teammates, and I accept feedback so that I can improve. My Human-Computer Interaction coursework helps me think about the people who will use the software I build.</p>
+      <p><strong>Career goals.</strong> I want to start my career as an entry-level Software Engineer at a company that builds digital services for Filipinos, and build the habits of a strong engineer: clean, maintainable code, careful testing, and steady learning.</p>
+      <p class="langs">Tagalog · Bicol · English</p>
+    </div>
+    <figure class="code-card reveal" aria-label="Decorative code snippet">
+      <figcaption><span>GenecomLibrary.java</span><span class="status">presented</span></figcaption>
+<pre><code><span class="ln">01</span> <span class="kw">Book</span> book = library.find(<span class="str">"Greenland"</span>);
+<span class="ln">02</span> <span class="kw">if</span> (reader.hasProgress(book)) {
+<span class="ln">03</span>     reader.resume(book);   <span class="cm">// page 55</span>
+<span class="ln">04</span> } <span class="kw">else</span> {
+<span class="ln">05</span>     reader.open(book, <span class="num-lit">1</span>);
+<span class="ln">06</span> }</code></pre>
+      <div class="progress"><span>capstone</span><span>Nov 2026</span></div>
+      <div class="bar-track"><div class="bar-fill"></div></div>
+    </figure>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="sec-head reveal"><h2>Projects</h2></div>
+
+  <article class="project reveal">
+    <div class="project-head">
+      <div>
+        <p class="meta"><span class="idx">01</span> Capstone project · Presented Nov 2026</p>
+        <h3>GENECOM Library</h3>
+      </div>
+      <div>
+        <p>A web-based digital library for GENECOM Institute of Science and Technology. Students activate their accounts with their LRN and a librarian’s code, browse hundreds of public-domain eBooks across 16 categories, save and rate books, and read in the browser with bookmarks, notes, page colors, and resume-where-you-left-off.</p>
+        <ul class="chips">
+          <li>Database design</li>
+          <li>Web development</li>
+          <li>Sign-in and account activation</li>
+          <li>UI design</li>
+          <li>Content licensing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="gallery" data-gallery>
+      <div class="gallery-tabs" role="tablist" aria-label="Project screenshots">
+        <button role="tab" aria-selected="true">Sign in</button>
+        <button role="tab" aria-selected="false">Home</button>
+        <button role="tab" aria-selected="false">Categories</button>
+        <button role="tab" aria-selected="false">Book page</button>
+        <button role="tab" aria-selected="false">Reader</button>
+        <button role="tab" aria-selected="false">Resume prompt</button>
+        <span class="count">1 / 6</span>
+      </div>
+      <div class="browser">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <div class="slides">
+          <figure class="slide active"><img src="capstone-login.jpg" alt="GENECOM Library sign-in page"><figcaption>Students sign in with their LRN; librarians use their ID.</figcaption></figure>
+          <figure class="slide"><img src="capstone-home.jpg" alt="Home page with a featured eBook and Continue Reading row" loading="lazy"><figcaption>Home page with featured books and Continue Reading.</figcaption></figure>
+          <figure class="slide"><img src="capstone-categories.jpg" alt="Browse by Category section" loading="lazy"><figcaption>Hundreds of eBooks sorted into 16 categories.</figcaption></figure>
+          <figure class="slide"><img src="capstone-book.jpg" alt="Book page with reading progress, source, and license" loading="lazy"><figcaption>Each book shows reading progress, source, and license.</figcaption></figure>
+          <figure class="slide"><img src="capstone-reader.jpg" alt="In-browser reader in Sepia page color" loading="lazy"><figcaption>Built-in reader with page colors, bookmarks, and notes.</figcaption></figure>
+          <figure class="slide"><img src="capstone-resume.jpg" alt="Welcome back prompt offering to resume reading" loading="lazy"><figcaption>Returning readers can resume where they left off.</figcaption></figure>
+          <button class="nav prev" aria-label="Previous screenshot">‹</button>
+          <button class="nav next" aria-label="Next screenshot">›</button>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sec-head reveal"><h2>What I work with</h2></div>
+  <div class="skill-rows reveal">
+    <div class="row"><h3>Programming</h3><ul class="dots-list"><li class="has-icon"><img src="icons/java.svg" alt="" width="18" height="18">Java</li><li class="has-icon"><img src="icons/csharp.svg" alt="" width="18" height="18">C#</li><li class="has-icon"><img src="icons/javascript.svg" alt="" width="18" height="18">JavaScript (basic)</li></ul></div>
+    <div class="row"><h3>Web</h3><ul class="dots-list"><li class="has-icon"><img src="icons/html5.svg" alt="" width="18" height="18">HTML5</li><li class="has-icon"><img src="icons/css3.svg" alt="" width="18" height="18">CSS3</li></ul></div>
+    <div class="row"><h3>Databases</h3><ul class="dots-list"><li class="has-icon"><img src="icons/mysql.svg" alt="" width="18" height="18">MySQL</li></ul></div>
+    <div class="row"><h3>Tools</h3><ul class="dots-list"><li class="has-icon"><img src="icons/vscode.svg" alt="" width="18" height="18">Visual Studio Code</li><li class="has-icon"><img src="icons/visualstudio.svg" alt="" width="18" height="18">Visual Studio</li><li class="has-icon"><img src="icons/github.svg" alt="" width="18" height="18">GitHub</li></ul></div>
+    <div class="row"><h3>Soft skills</h3><ul class="dots-list"><li>Problem solving</li><li>Team collaboration</li><li>Attention to detail</li><li>Time management</li><li>Willingness to learn</li></ul></div>
+    <div class="row"><h3>Languages</h3><ul class="dots-list"><li>Tagalog (fluent)</li><li>Bicol (fluent)</li><li>English (working proficiency)</li></ul></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="sec-head reveal"><h2>Experience</h2></div>
+  <ol class="timeline reveal">
+    <li>
+      <p class="meta">2026</p>
+      <h3>Capstone Team Member</h3>
+      <p class="sub">eBook Library Management System · STI College Legazpi</p>
+      <ul class="diamonds">
+        <li>Helped gather requirements from GENECOM Institute of Science and Technology, our client</li>
+        <li>Built and tested system features and fixed the errors we found</li>
+        <li>Presented the finished system with my team in November 2026</li>
+      </ul>
+    </li>
+    <li>
+      <p class="meta">Aug 2023 – present</p>
+      <h3>BS Information Technology, STI College Legazpi</h3>
+      <p>Programming Fundamentals, Data Structures and Algorithms, Object-Oriented Programming, Database Management, Human-Computer Interaction.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <div class="sec-head reveal"><h2>Certificates and achievements</h2></div>
+  <figure class="cert-card reveal">
+    <a href="certificate.jpg" target="_blank" rel="noopener"><img src="certificate.jpg" alt="Oracle Academy Award of Course Completion in Java Fundamentals, presented to Timothy Jade Montano on 19 June 2024" loading="lazy"></a>
+    <figcaption>
+      <h3>Java Fundamentals</h3>
+      <p class="issuer">Oracle Academy · Award of Course Completion</p>
+      <p class="date">June 19, 2024</p>
+      <p>Completed all coursework in core Java programming and object-oriented concepts, the foundation I now use in my capstone project.</p>
+    </figcaption>
+  </figure>
+</section>
+
+<!-- DOCUMENTS -->
+<section id="documents">
+  <div class="sec-head reveal"><h2>Resume and cover letter</h2></div>
+  <p class="lead reveal">Download both documents as PDFs.</p>
+  <div class="doc-grid reveal">
+    <article class="doc-card">
+      <h3>Resume</h3>
+      <p>Skills, projects, education, and certification at a glance.</p>
+      <a class="pill solid" href="resume.pdf" download="Montano_Resume.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 19h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Download resume (PDF)</a>
+    </article>
+    <article class="doc-card">
+      <h3>Cover letter</h3>
+      <p>My application letter for an entry-level Software Engineer role.</p>
+      <a class="pill" href="cover-letter.pdf" download="Montano_Cover_Letter.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 19h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Download cover letter (PDF)</a>
+    </article>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sec-head reveal"><h2>Get in touch</h2></div>
+  <p class="lead">I am open to internships and entry-level software engineering roles. Email me or find me on any of the platforms below.</p>
+  <ul class="contact-pills reveal">
+    <li><a class="pill" href="mailto:timothyjademontano@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>timothyjademontano@gmail.com</a></li>
+    <li><a class="pill" href="https://www.linkedin.com/in/timothy-jade-b-monta%C3%B1o-a37660438" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 11v5M8 8v.01M12 16v-5M12 13c0-1.5 1-2 2-2s2 .5 2 2v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>LinkedIn</a></li>
+    <li><a class="pill" href="https://github.com/timothyjademontano-byte" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 18c-3 1-3-1.5-4.5-2M15 21v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>GitHub</a></li>
+    <li><a class="pill" href="https://www.facebook.com/timothyjade.montano.9/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15 8h-1.5A1.5 1.5 0 0 0 12 9.5V20M10 13h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Facebook</a></li>
+    <li><span class="pill static"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.3-6-11a6 6 0 0 1 12 0c0 5.7-6 11-6 11z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2" fill="currentColor"/></svg>Legazpi City, Albay</span></li>
+  </ul>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 · Timothy Jade B. Montaño</p>
+  <p>BS Information Technology · STI College Legazpi</p>
+</footer>
+
+<a class="to-top" href="#home" aria-label="Back to top">
+  <svg class="ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="21" /></svg>
+  <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+<script>
+// Screenshot gallery: tabs, arrows, and swipe-free keyboard support
+document.querySelectorAll('[data-gallery]').forEach(function (g) {
+  var tabs = g.querySelectorAll('[role=tab]');
+  var slides = g.querySelectorAll('.slide');
+  var count = g.querySelector('.count');
+  var i = 0;
+  function show(n) {
+    i = (n + slides.length) % slides.length;
+    slides.forEach(function (s, k) { s.classList.toggle('active', k === i); });
+    tabs.forEach(function (t, k) { t.setAttribute('aria-selected', k === i); });
+    count.textContent = (i + 1) + ' / ' + slides.length;
+  }
+  tabs.forEach(function (t, k) { t.addEventListener('click', function () { show(k); }); });
+  g.querySelector('.prev').addEventListener('click', function () { show(i - 1); });
+  g.querySelector('.next').addEventListener('click', function () { show(i + 1); });
+});
+
+// Highlight the menu link for the section on screen
+var links = document.querySelectorAll('.links a');
+var io = new IntersectionObserver(function (entries) {
+  entries.forEach(function (e) {
+    if (e.isIntersecting) {
+      links.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id); });
+    }
+  });
+}, { rootMargin: '-45% 0px -50% 0px' });
+document.querySelectorAll('main section').forEach(function (s) { io.observe(s); });
+
+// Theme: remembers the visitor's choice when the browser allows it
+(function () {
+  var btn = document.querySelector('.theme-toggle');
+  function apply(t) {
+    document.documentElement.setAttribute('data-theme', t);
+    btn.setAttribute('aria-label', t === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
+  }
+  var saved = null;
+  try { saved = localStorage.getItem('tm-theme'); } catch (e) {}
+  apply(saved || 'dark');
+  btn.addEventListener('click', function () {
+    var next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    apply(next);
+    try { localStorage.setItem('tm-theme', next); } catch (e) {}
+  });
+})();
+
+// Reading progress bar and back-to-top ring
+(function () {
+  var bar = document.querySelector('.progress-bar');
+  var top = document.querySelector('.to-top');
+  var ring = top.querySelector('.ring circle');
+  var len = 2 * Math.PI * 21;
+  ring.style.strokeDasharray = len;
+  function update() {
+    var h = document.documentElement.scrollHeight - innerHeight;
+    var p = h > 0 ? scrollY / h : 0;
+    bar.style.transform = 'scaleX(' + p + ')';
+    ring.style.strokeDashoffset = len * (1 - p);
+    top.classList.toggle('show', scrollY > 500);
+  }
+  addEventListener('scroll', update, { passive: true });
+  update();
+})();
+
+// Fade sections in as they scroll into view
+(function () {
+  var items = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    items.forEach(function (el) { el.classList.add('in'); });
+    return;
+  }
+  var ob = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); ob.unobserve(e.target); }
+    });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  items.forEach(function (el) { ob.observe(el); });
+})();
+</script>
+</body>
+</html>
